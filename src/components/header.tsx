@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div>
+    <div className="drop-shadow-lg">
       <div className="bg-[#1B365D] py-1">
         <div className="flex max-w-[1300px] mx-auto px-10  gap-x-6 text-white justify-end items-center">
           <div className="flex items-center gap-x-2">
@@ -16,7 +16,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white">
+      <div className="bg-white ">
         <div className="flex max-w-[1300px] py-4  mx-auto px-10   justify-between items-center">
           <Image src={Logo} className="max-w-[90px]" alt="logo" />
           <div className="">
