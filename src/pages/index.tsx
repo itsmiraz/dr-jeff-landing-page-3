@@ -6,8 +6,10 @@ import Hero from "@/components/hero";
 import LearnFrom from "@/components/learnFrom";
 import Method from "@/components/method";
 import PathToRelief from "@/components/pathToRelief";
+import Results from "@/components/results";
 import Stats from "@/components/stats";
 import TreatMent from "@/components/treatMent";
+import WorldClassTreatments from "@/components/worldClassTreatments";
 
 // // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -21,14 +23,16 @@ import TreatMent from "@/components/treatMent";
 
 export default function Home() {
   return (
-  <>
-  <Header/>
-  <Hero/>
-  <Stats/>
-  <TreatMent/>
-  <Method/>
-  <PathToRelief/>
-  <LearnFrom/>
-  </>
+    <>
+      <Header />
+      <Hero />
+      <Stats />
+      <TreatMent />
+      <Method />
+      <PathToRelief />
+      <LearnFrom />
+      <Results />
+      <WorldClassTreatments />
+    </>
   );
 }
