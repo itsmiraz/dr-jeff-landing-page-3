@@ -3,6 +3,9 @@
 
 import Header from "@/components/header";
 import Hero from "@/components/hero";
+import Method from "@/components/method";
+import Stats from "@/components/stats";
+import TreatMent from "@/components/treatMent";
 
 // // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -19,8 +22,9 @@ export default function Home() {
   <>
   <Header/>
   <Hero/>
-  
-  
+  <Stats/>
+  <TreatMent/>
+  <Method/>
   </>
   );
 }
