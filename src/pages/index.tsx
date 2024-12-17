@@ -3,6 +3,7 @@
 
 import Header from "@/components/header";
 import Hero from "@/components/hero";
+import LearnFrom from "@/components/learnFrom";
 import Method from "@/components/method";
 import PathToRelief from "@/components/pathToRelief";
 import Stats from "@/components/stats";
@@ -27,6 +28,7 @@ export default function Home() {
   <TreatMent/>
   <Method/>
   <PathToRelief/>
+  <LearnFrom/>
   </>
   );
 }
