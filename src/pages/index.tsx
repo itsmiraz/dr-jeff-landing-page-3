@@ -1,6 +1,8 @@
 // import Image from "next/image";
 // import { Geist, Geist_Mono } from "next/font/google";
 
+import About from "@/components/about";
+import CTA from "@/components/cta";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import LearnFrom from "@/components/learnFrom";
@@ -33,6 +35,8 @@ export default function Home() {
       <LearnFrom />
       <Results />
       <WorldClassTreatments />
+      <About/>
+      <CTA/>
     </>
   );
 }
