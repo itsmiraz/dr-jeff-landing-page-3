@@ -4,6 +4,7 @@
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Method from "@/components/method";
+import PathToRelief from "@/components/pathToRelief";
 import Stats from "@/components/stats";
 import TreatMent from "@/components/treatMent";
 
@@ -25,6 +26,7 @@ export default function Home() {
   <Stats/>
   <TreatMent/>
   <Method/>
+  <PathToRelief/>
   </>
   );
 }
