@@ -12,7 +12,7 @@ const Stats = () => {
   const dividerImages = [VerticalDivider, VerticalDivider, VerticalDivider];
 
   return (
-    <div className="max-w-[1300px] px-[80px] flex justify-center items-center mx-auto -translate-y-[100px] h-[200px] bg-[#FFFFFF] rounded-[20px] shadow-gray-100-2xl shadow">
+    <div className="max-w-[1300px] stats_shadows px-[80px] flex justify-center items-center mx-auto -translate-y-[100px] h-[200px] bg-[#FFFFFF] rounded-[20px] ">
       <div className="flex w-full justify-between flex-wrap gap-10 items-center font-bold text-center rounded-none">
         {statisticsData.map((stat, index) => (
           <React.Fragment key={index}>

@@ -13,3 +13,17 @@
     @apply font-serif; /* Applies Tailwind's serif font utility */
     font-family: var(--font-plantin-mt-pro); /* Uses the Plantin MT Pro variable */
   }
+
+  .stats_shadows{
+    box-shadow: 20px 20px 84px 0px rgba(27, 54, 93, 0.08);
+
+  }
+
+  .header_shadow{
+    box-shadow: 20px 20px 84px 0px rgba(27, 54, 93, 0.08);
+
+  }
+  .hero_shadow{
+    box-shadow: 4px 4px 14px 0px rgba(146, 158, 198, 0.2);
+
+  }

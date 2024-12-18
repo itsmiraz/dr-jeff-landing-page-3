@@ -59,7 +59,7 @@ const Hero = () => {
 
         <div className="grid pt-[46px] grid-cols-2 gap-x-[41px] gap-y-[30px]">
           {data.map((item, i) => (
-            <div className="bg-white shadow-lg rounded-lg p-[20px]" key={i}>
+            <div className="bg-white hero_shadow rounded-lg p-[20px]" key={i}>
               <h3 className="text-[18px] font-source-sans font-bold text-secondary">
                 {item.title}
               </h3>

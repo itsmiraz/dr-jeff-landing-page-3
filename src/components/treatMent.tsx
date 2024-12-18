@@ -79,7 +79,7 @@ const FeatureCard = ({
 }) => {
   return (
     <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-      <div className="flex flex-col pl-[30px] pt-8 pb-12 mx-auto w-full bg-white rounded-[40px] shadow-[10px_50px_80px_rgba(41,46,51,0.06)] max-md:px-5 max-md:mt-10">
+      <div className="flex flex-col pl-[30px] pr-0 pt-8 pb-12 mx-auto w-full bg-white rounded-[40px] shadow-[10px_50px_80px_rgba(41,46,51,0.06)] max-md:px-5 max-md:mt-10">
         <Image
           loading="lazy"
           src={icon}
@@ -88,7 +88,7 @@ const FeatureCard = ({
           height={120}
           className="object-contain self-center w-[100px] h-[100px] rounded-none aspect-square"
         />
-        <h3 className={`${font_platinPro}  self-start mt-[0px] text-2xl font-bold leading-loose text-primary`}>
+        <h3 className={`${font_platinPro}  whitespace-nowrap self-start mt-[0px] text-[22px] font-bold leading-loose text-primary`}>
           {title}
         </h3>
         <div className="flex gap-3 items-start mt-[13px]">

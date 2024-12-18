@@ -5,13 +5,13 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className="drop-shadow-lg">
+    <div className="header_shadow">
       <div className="bg-[#1B365D] py-1">
         <div className="flex max-w-[1300px] mx-auto px-10  gap-x-6 text-white justify-end items-center">
-          <div className="flex items-center gap-x-2">
+          <div className="flex font-source-sans  items-center gap-x-2">
             <Phone /> <span>1-260-250-4303</span>
           </div>
-          <div className="flex items-center gap-x-2">
+          <div className="flex  font-source-sans items-center gap-x-2">
             <Location /> <span>Midwest Disc Clinic, Shipshewana</span>
           </div>
         </div>

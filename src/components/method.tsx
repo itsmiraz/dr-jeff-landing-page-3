@@ -78,7 +78,7 @@ const Method = () => {
   ];
   return (
     <div className="py-[150px]">
-      <div className="max-w-[1077px] mx-auto">
+      <div className="max-w-[1277px] mx-auto">
         <div className="flex flex-col items-center rounded-none">
           <h2 className={`${font_platinPro} z-10 text-4xl font-bold leading-10 text-center text-primary max-md:max-w-full`}>
             The DOSAE™ Method:
