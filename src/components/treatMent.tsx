@@ -5,6 +5,7 @@ import DiagnosisIcon from "@/assets/images/iconsImages/diaogonosis.png";
 import TreatmentIcon from "@/assets/images/iconsImages/treatment.png";
 import ResultsIcon from "@/assets/images/iconsImages/results.png";
 import CheckIcon from "@/assets/icons/check.svg";
+import { font_platinPro } from "@/fonts/fonts";
 
 const TreatMent = () => {
   const data = [
@@ -43,15 +44,15 @@ const TreatMent = () => {
     <div>
       <div className="max-w-[1300px] py-[50px] px-[111px] mx-auto rounded-[40px] bg-[#F5F7F9] ">
       <div className="flex flex-col items-center rounded-none">
-        <h2 className="z-10 text-4xl font-bold leading-none text-center text-primary max-md:max-w-full">
+        <h2 className={`z-10 ${font_platinPro} text-4xl font-bold leading-none text-center text-primary max-md:max-w-full`}>
           Transforming Spine treatment through innovation
         </h2>
-        <div className="mt-4 text-lg leading-loose text-center text-primary max-md:max-w-full">
+        <p className="mt-4 font-source-sans text-lg leading-loose text-center text-primary max-md:max-w-full">
           Combining advanced diagnostics with revolutionary non-surgical
           solutions
-        </div>
+        </p>
         <div className="self-stretch mt-14 w-full max-md:mt-10 max-md:max-w-full">
-          <div className="flex gap-5 max-md:flex-col">
+          <div className="flex gap-[41px] max-md:flex-col">
             {data.map((feature, index) => (
               <FeatureCard key={index} {...feature} />
             ))}
@@ -87,7 +88,7 @@ const FeatureCard = ({
           height={120}
           className="object-contain self-center w-[100px] h-[100px] rounded-none aspect-square"
         />
-        <h3 className="self-start mt-[0px] text-2xl font-bold leading-loose text-blue-950">
+        <h3 className={`${font_platinPro}  self-start mt-[0px] text-2xl font-bold leading-loose text-primary`}>
           {title}
         </h3>
         <div className="flex gap-3 items-start mt-[13px]">
@@ -109,7 +110,7 @@ const FeatureCard = ({
             {points.map((point, index) => (
               <div key={index} className="flex text-[18px] leading-[40px] items-center gap-x-3">
                 <CheckIcon/>
-                <p>
+                <p className="font-source-sans">
                 {point}
                 </p>
              

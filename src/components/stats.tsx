@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import VerticalDivider from "@/assets/images/devider.png";
+import { font_platinPro } from "@/fonts/fonts";
 const Stats = () => {
   const statisticsData = [
     { value: "10,000+", label: "Patients Treated" },
@@ -31,10 +32,10 @@ export default Stats;
 const StatisticItem = ({ value, label }: { value: string; label: string }) => {
   return (
     <div className="flex flex-col self-stretch my-auto">
-      <h2 className="self-center text-5xl leading-none text-accent max-md:text-4xl">
+      <h2 className="self-center font-source-sans text-5xl leading-none text-accent max-md:text-4xl">
         {value}
       </h2>
-      <p className="mt-7 text-lg leading-none text-primary">{label}</p>
+      <p className={`mt-7 text-lg  ${font_platinPro} leading-none text-primary`}>{label}</p>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+import { fontFamily }  from  "tailwindcss/defaultTheme";
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,6 +14,10 @@ export default {
         primary:'#1B365D',
         secondary:'#D4AA4F',
         accent:'#7C9885',
+      },
+      fontFamily: {
+        sans: ['var(--font-source-sans-pro)', ...fontFamily.sans],
+        custom: ['var(--font-plantin-mt-pro)', ...fontFamily.serif],
       },
     },
   },

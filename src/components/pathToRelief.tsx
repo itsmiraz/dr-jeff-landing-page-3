@@ -3,6 +3,7 @@ import MainImg from "@/assets/images/pathToReliefImage.png";
 import DotIcon from "@/assets/icons/dot.svg";
 import Image from "next/image";
 import LeftArrow from "@/assets/icons/leftArrow.svg";
+import { font_platinPro } from "@/fonts/fonts";
 
 const PathToRelief = () => {
   const points = [
@@ -15,31 +16,31 @@ const PathToRelief = () => {
     <div>
       <div className="flex justify-center gap-20 items-center max-w-[1300px] mx-auto bg-primary rounded-[40px] pl-[110px] pr-[134px]">
         <div>
-          <h2 className="text-[40px] text-white font-bold">
+          <h2 className={`${font_platinPro} text-[40px] text-white font-bold`}>
             Discover your path to relief
           </h2>
-          <p className="text-[18px] leading-[28px] text-[#F5F7F9]">
+          <p className=" font-source-sans text-[18px] leading-[28px] text-[#F5F7F9]">
             Take our comprehensive spine assessment to find out if the DOSAE™{" "}
             <br /> method could help you avoid surgery
           </p>
           <div>
-            <h4 className="pt-[41px] font-bold text-[24px] text-[#7C9885]">
+            <h4 className={`${font_platinPro} pt-[41px] font-bold text-[24px] text-[#7C9885]`}>
               Whether you're experiencing:
             </h4>
             <ul className="pt-[10px] space-y-[10px]">
               {points.map((item, key) => (
                 <li key={key} className="flex items-center gap-x-[10px]">
                   <DotIcon />
-                  <p className="font-semibold text-[#F5F7F9]">{item}</p>
+                  <p className="font-semibold  font-source-sans text-[#F5F7F9]">{item}</p>
                 </li>
               ))}
             </ul>
           </div>
           <div className="mt-[48px]">
-            <button className="rounded-full font-bold text-white flex items-center justify-center gap-x-[12px] px-[20px] py-[13px] bg-[#D4AA4F]">
+            <button className="rounded-full font-source-sans font-bold text-white flex items-center justify-center gap-x-[12px] px-[20px] py-[13px] bg-[#D4AA4F]">
               Start Your Free Assessment <LeftArrow />
             </button>
-            <p className="font-semibold mt-[6px] text-[14px] text-[#7C9885]">
+            <p className="font-semibold font-source-sans mt-[6px] text-[14px] text-[#7C9885]">
               Our assessment will help determine your best treatment path.
             </p>
           </div>

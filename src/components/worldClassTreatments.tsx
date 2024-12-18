@@ -1,6 +1,7 @@
 import React from "react";
 import HorizontalLine from "@/assets/icons/horizontalLine.svg";
 import LeftArrow from "@/assets/icons/leftArrow.svg";
+import { font_platinPro } from "@/fonts/fonts";
 
 const WorldClassTreatments = () => {
   const localPatientPoints = [
@@ -20,9 +21,9 @@ const WorldClassTreatments = () => {
   return (
     <div className="mt-[150px]">
       <div className="flex  justify-center max-w-[1300px] mx-auto  flex-col rounded-none">
-        <div className="self-center ml-5 text-4xl font-bold leading-none text-center text-blue-950 max-md:max-w-full">
+        <h2 className={`${font_platinPro} self-center ml-5 text-4xl font-bold leading-none text-center text-primary max-md:max-w-full`}>
           World-Class treatment available now
-        </div>
+        </h2>
         <div className="pt-[6px] mx-auto">
           <HorizontalLine />
         </div>
@@ -51,14 +52,14 @@ const WorldClassTreatments = () => {
 export default WorldClassTreatments;
 
 const ActionButton = ({ text }: { text: string }) => (
-  <div className="gap-x-[10px] flex items-center w-fit px-5 py-[13px] bg-secondary rounded-[100px]">
-    <div className="grow text-sm font-bold leading-loose text-white">
+  <button className="gap-x-[10px] font-source-sans flex items-center w-fit px-5 py-[13px] bg-secondary rounded-[100px]">
+    <span className="grow text-sm font-bold leading-loose text-white">
       {text}
-    </div>
-    <div>
+    </span>
+    <span>
       <LeftArrow />
-    </div>
-  </div>
+    </span>
+  </button>
 );
 
 const PatientSection = ({
@@ -74,10 +75,10 @@ const PatientSection = ({
 }) => (
   <div className="h-[471px] p-[30px] rounded-[30px] bg-[#F5F7F9] max-w-[635px] ">
    <div className="bg-white h-full pt-[50px] pb-[20px] px-[40px] rounded-[30px] flex flex-col flex-1 max-md:max-w-full">
-   <h2 className="self-start text-4xl font-bold leading-none text-[#7C9885]">
+   <h2 className={`${font_platinPro} self-start text-4xl font-bold leading-none text-[#7C9885]`}>
       {title}
     </h2>
-    <p className="mt-4 text-xl leading-[28px] text-[#s1B365D] max-md:max-w-full">
+    <p className=" font-source-sans mt-4 text-xl leading-[28px] text-[#s1B365D] max-md:max-w-full">
       {description}
     </p>
     <div className="mt-[15px]">
@@ -98,6 +99,6 @@ const BulletPoint = ({ text }: { text: string }) => (
     <div className="flex flex-col self-start mt-3">
       <div className="flex shrink-0 w-2 h-2 bg-secondary rounded-full" />
     </div>
-    <div className="w-64 text-base leading-7 text-primary">{text}</div>
+    <p className="w-64 text-base leading-7 font-source-sans text-primary">{text}</p>
   </div>
 );

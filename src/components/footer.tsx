@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react'
 import LeftArrow from "@/assets/icons/leftArrow.svg";
+import { font_platinPro } from '@/fonts/fonts';
 
 const Footer = () => {
   const quickLinks = [
@@ -77,7 +78,7 @@ const Footer = () => {
       </div>
     
     </div>
-    <div className="self-center w-full py-3 bg-[#1B365D] text-xs leading-none text-center text-slate-100 ">
+    <div className="self-center font-source-sans w-full py-3 bg-[#1B365D] text-xs leading-none text-center text-slate-100 ">
         © 2024 Dr. Jeff Garofalo. All rights reserved.
       </div>
     </div>
@@ -104,12 +105,12 @@ const NewsletterForm  = ({ onSubmit }:{onSubmit:(email:string)=>void}) => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Enter your Email"
-        className="px-4 py-3 bg-[#1B365D] rounded-[100px] max-md:pr-5"
+        className="px-4 py-3 font-source-sans bg-[#1B365D] rounded-[100px] max-md:pr-5"
         required
       />
       <button 
         type="submit"
-        className="flex gap-x-3 justify-center items-center px-3.5 py-[13px] font-bold whitespace-nowrap bg-secondary rounded-[100px]"
+        className="flex gap-x-3 font-source-sans justify-center items-center px-3.5 py-[13px] font-bold whitespace-nowrap bg-secondary rounded-[100px]"
       >
         Subscribe
         <LeftArrow/>
@@ -120,10 +121,10 @@ const NewsletterForm  = ({ onSubmit }:{onSubmit:(email:string)=>void}) => {
 
 const Section = ({ title, children }:{title:string,children:any}) => (
   <div className="flex flex-col max-md:mt-10">
-    <div className="self-start text-2xl font-bold leading-none text-[#7C9885]">
+    <h2 className={`self-start ${font_platinPro} text-2xl font-bold leading-none text-[#7C9885]`}>
       {title}
-    </div>
-    <div className="mt-[20px] text-[#F5F7F9]">
+    </h2>
+    <div className="mt-[20px] font-source-sans text-[#F5F7F9]">
       {children}
     </div>
   </div>

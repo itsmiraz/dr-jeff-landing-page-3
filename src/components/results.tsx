@@ -6,6 +6,7 @@ import HorizontalLine from "@/assets/icons/horizontalLine.svg";
 import RoundedArrow from '@/assets/icons/roundedArrow.svg'
 import RoundedArrowRight from '@/assets/icons/roundedArrowRight.svg'
 import Image2 from "@/assets/images/testimonail/image2.png";
+import { font_platinPro } from "@/fonts/fonts";
 const Results = () => {
   const testimonials = [
     {
@@ -22,7 +23,7 @@ const Results = () => {
   return (
     <div>
       <div className="flex max-w-[1300px] mx-auto py-[50px] px-[111px]  rounded-[40px] bg-[#F5F7F9] flex-col items-center">
-        <h2 className="z-10 text-4xl font-bold leading-none text-center text-blue-950 max-md:max-w-full">
+        <h2 className={`z-10 ${font_platinPro}  text-4xl font-bold leading-none text-center text-blue-950 max-md:max-w-full`}>
           Real results, Real people
         </h2>
 
@@ -70,10 +71,10 @@ const StatisticItem = ({
 }) => {
   return (
     <div className="flex flex-col font-bold text-center">
-      <div className="self-center text-5xl leading-none text-[#7C9885] max-md:text-4xl">
+      <h3 className="self-center  font-source-sans text-5xl leading-none text-[#7C9885] max-md:text-4xl">
         {value}
-      </div>
-      <div className="mt-[10px] w-full text-lg  whitespace-nowrap leading-none text-primary">{label}</div>
+      </h3>
+      <p className={`${font_platinPro} mt-[10px] w-full text-lg  whitespace-nowrap leading-none text-primary`}>{label}</p>
     
     </div>
   );
@@ -98,8 +99,8 @@ const TestimonialCard = ({
         alt={`Profile picture of ${name}`}
         className="object-contain w-20 rounded-none aspect-square"
       />
-      <div className="mt-5 leading-tight text-gray-500">{name}</div>
-      <p className="self-stretch mt-4 leading-[30px] text-blue-950 max-md:max-w-full">
+      <h3 className={`mt-5 ${font_platinPro} leading-tight text-[#7C9885]`}>{name}</h3>
+      <p className={`${font_platinPro} self-stretch mt-4 leading-[30px] text-primary max-md:max-w-full`}>
         {text}
       </p>
     </div>

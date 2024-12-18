@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.font-source-sans {
+    @apply font-sans; /* Ensure it's treated as a sans-serif */
+    font-family: var(--font-source-sans-pro);
+  }
+  
+  .font-plantin {
+    @apply font-serif; /* Applies Tailwind's serif font utility */
+    font-family: var(--font-plantin-mt-pro); /* Uses the Plantin MT Pro variable */
+  }

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Image1 from "@/assets/images/method/image-1.png";
 import Image2 from "@/assets/images/method/image2.png";
 import Image3 from "@/assets/images/method/image3.png";
+import { font_platinPro } from "@/fonts/fonts";
 
 const Method = () => {
   const methodData = [
@@ -79,13 +80,13 @@ const Method = () => {
     <div className="py-[150px]">
       <div className="max-w-[1077px] mx-auto">
         <div className="flex flex-col items-center rounded-none">
-          <div className="z-10 text-4xl font-bold leading-10 text-center text-blue-950 max-md:max-w-full">
+          <h2 className={`${font_platinPro} z-10 text-4xl font-bold leading-10 text-center text-primary max-md:max-w-full`}>
             The DOSAE™ Method:
             <br />A revolutionary approach to Spine care
-          </div>
-          <div className="mt-3 text-lg leading-loose text-blue-950">
+          </h2>
+          <p className={`mt-3  font-source-sans text-lg leading-loose text-[#1B365D]`}>
             Where others mask symptoms, we target the root cause.
-          </div>
+          </p>
           <div className="self-stretch mt-12 w-full max-md:mt-10 max-md:max-w-full">
             <div className="flex gap-5 max-md:flex-col">
               <div className="flex space-y-4 flex-col w-[35%] max-md:ml-0 max-md:w-full">
@@ -153,14 +154,14 @@ const MethodSection = ({
   <div className="flex flex-col">
     <div className="flex gap-4 items-start">
       <div
-        className={`mt-1 flex justify-center items-center leading-0 w-10 h-10 text-2xl font-bold leading-loose text-center whitespace-nowrap ${bgColor} rounded-full shadow-[4px_4px_14px_rgba(146,158,198,0.2)] text-slate-100`}
+        className={`${font_platinPro} mt-1 flex justify-center items-center leading-0 w-10 h-10 text-2xl font-bold leading-loose text-center whitespace-nowrap ${bgColor} rounded-full shadow-[4px_4px_14px_rgba(146,158,198,0.2)] text-slate-100`}
       >
         {letter}
       </div>
       <div className="flex flex-col ">
-        <div className="text-2xl font-bold leading-loose text-blue-950">
+        <h3 className={` ${font_platinPro} text-2xl font-bold leading-loose text-primary`}>
           {title}
-        </div>
+        </h3>
         <div className="flex flex-col gap-1 mt-2">
           {bulletPoints.map((text, index) => (
             <BulletPoint key={index} text={text} />
@@ -174,6 +175,6 @@ const MethodSection = ({
 const BulletPoint = ({ text }: { text: string }) => (
   <div className="flex items-center gap-x-4">
     <div className="flex shrink-0 w-2 h-2 bg-[#D4AA4F] rounded-full" />
-    <div className="w-full text-base  text-[#1B365D]">{text}</div>
+    <p className="w-full  font-source-sans text-base  text-[#1B365D]">{text}</p>
   </div>
 );

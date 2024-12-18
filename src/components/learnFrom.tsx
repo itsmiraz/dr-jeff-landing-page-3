@@ -8,6 +8,7 @@ import Image5 from "@/assets/images/learningFrom/image5.png";
 import Image6 from "@/assets/images/learningFrom/image6.png";
 import HorizontalLine from "@/assets/icons/horizontalLine.svg";
 import LoadMore from "@/assets/icons/leftArrow.svg";
+import { font_platinPro } from "@/fonts/fonts";
 const topContent = [
   {
     type: "Article",
@@ -45,7 +46,7 @@ const topContent = [
 const LearnFrom = () => {
   return (
     <div className="flex mt-[150px] flex-col items-center rounded-none">
-      <h1 className="text-4xl font-bold leading-none text-center text-blue-950 max-md:max-w-full">
+      <h1 className={`${font_platinPro} text-4xl font-bold leading-none text-center text-primary max-md:max-w-full`}>
         Learn from a leading Spine expert
       </h1>
       <div className="flex mt-[6px] justify-center items-center">
@@ -70,15 +71,6 @@ const LearnFrom = () => {
 };
 
 export default LearnFrom;
-// const ContentGrid = ({ items }) => {
-//   return (
-//     <div className="flex gap-5 max-md:flex-col">
-//       {items.map((item, index) => (
-//         <ContentCard key={index} {...item} />
-//       ))}
-//     </div>
-//   );
-// };
 
 const ContentCard = ({
   type,
@@ -100,10 +92,10 @@ const ContentCard = ({
           height={220}
           className="object-contain self-stretch w-full rounded-none aspect-[1.69]"
         />
-        <div className="mt-3.5 text-base text-secondary">{type}</div>
-        <div className="mt-[4px] text-xl leading-relaxed text-primary">
+        <p className="mt-3.5  font-source-sans text-base text-secondary">{type}</p>
+        <h3 className={`mt-[4px] ${font_platinPro} text-xl leading-relaxed text-primary`}>
           {title}
-        </div>
+        </h3>
       </div>
     </div>
   );
