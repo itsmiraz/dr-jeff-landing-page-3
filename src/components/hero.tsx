@@ -2,13 +2,10 @@ import HeroImg from "@/assets/images/hero.png";
 import Image from "next/image";
 import Line from "@/assets/icons/line.svg";
 import BackgroundGraphic from "@/assets/images/background-graphic-desktip.png";
-import MobileBackgroundGraphic from "@/assets/images/background-graphic-desktip.png";
-import { useState } from "react";
 import { plantinMTPro } from "@/fonts/fonts";
 import UnderLine from "@/assets/icons/mobileUnderlineHero.svg";
 
 const Hero = () => {
-  // const [isMobile, setisMobile] = useState(false);
 
   const data = [
     {
@@ -37,7 +34,7 @@ const Hero = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-      className="flex md:flex-row flex-col relative  gap-[40px] justify-center pt-[40px] md:pt-[84px] pb-[259px] px-[20px] md:px-20"
+      className="flex md:flex-row flex-col relative  gap-[40px] justify-center pt-[40px] md:pt-[84px]  pb-[100px] md:pb-[259px] px-[20px] md:px-20"
     >
       <div>
         <h1
@@ -58,7 +55,7 @@ const Hero = () => {
           </span>{" "}
           <br className="hidden md:block" /> care that works
         </h1>
-        <p className="text-primary  font-source-sans text-xl">
+        <p className="text-primary pt-[20px]  font-source-sans text-xl">
           Pioneering breakthrough treatments for disc injuries, helping <br />
           thousands avoid surgery and return to a pain-free life.
         </p>

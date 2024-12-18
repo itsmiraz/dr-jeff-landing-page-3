@@ -41,9 +41,7 @@ const WorldClassTreatments = () => {
             actionBtnText={'Learn About Our Travel Program'}
           />
         </div>
-        {/* <div className="flex flex-wrap gap-10 mt-14 w-full max-w-[921px] max-md:mt-10 max-md:max-w-full">
-          <ActionButton text="Learn About Our Travel Program" />
-        </div> */}
+        
       </div>
     </div>
   );
