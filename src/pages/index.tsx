@@ -3,6 +3,7 @@
 
 import About from "@/components/about";
 import CTA from "@/components/cta";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import LearnFrom from "@/components/learnFrom";
@@ -37,6 +38,7 @@ export default function Home() {
       <WorldClassTreatments />
       <About/>
       <CTA/>
+      <Footer/>
     </>
   );
 }
