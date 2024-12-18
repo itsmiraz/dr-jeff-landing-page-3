@@ -41,10 +41,10 @@ const TreatMent = () => {
     },
   ];
   return (
-    <div>
-      <div className="max-w-[1300px] py-[50px] px-[111px] mx-auto rounded-[40px] bg-[#F5F7F9] ">
+    <div className="mt-[60px]">
+      <div className="max-w-[1300px] py-[50px] px-[25px] md:px-[111px] mx-auto rounded-[40px] bg-[#F5F7F9] ">
       <div className="flex flex-col items-center rounded-none">
-        <h2 className={`z-10 ${font_platinPro} text-4xl font-bold leading-none text-center text-primary max-md:max-w-full`}>
+        <h2 className={`z-10 ${font_platinPro} text-[34px] md:text-4xl font-bold leading-[40px] md:leading-none text-center text-primary max-md:max-w-full`}>
           Transforming Spine treatment through innovation
         </h2>
         <p className="mt-4 font-source-sans text-lg leading-loose text-center text-primary max-md:max-w-full">

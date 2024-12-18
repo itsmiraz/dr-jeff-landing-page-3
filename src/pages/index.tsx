@@ -29,15 +29,15 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <Stats />
-      <TreatMent />
-      <Method />
-      <PathToRelief />
-      <LearnFrom />
-      <Results />
-      <WorldClassTreatments />
-      <About/>
-      <CTA/>
+    <Stats />
+       <TreatMent />
+   <Method />
+        <PathToRelief />
+    <LearnFrom />
+       <Results />
+         <WorldClassTreatments />
+   <About/>
+         <CTA/>
       <Footer/>
     </>
   );

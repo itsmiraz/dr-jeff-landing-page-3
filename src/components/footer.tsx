@@ -22,61 +22,50 @@ const Footer = () => {
     console.log(email);
     // Handle newsletter submission
   };
+
+  
   return (
     <div>
-        <div className="flex bg-[#112C53] py-[100px] pl-[150px] pr-[20px] flex-col rounded-none">
-      <div className="z-10 mt-0 w-full max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col">
-          <div className="flex flex-col w-[44%] max-md:ml-0 max-md:w-full">
-            <div className="grow max-md:mt-10 max-md:max-w-full">
-              <div className="flex gap-5 max-md:flex-col">
-                <div className="flex flex-col w-[61%] max-md:ml-0 max-md:w-full">
-                  <Section title="Contact">
-                    <div className="text-lg leading-8 text-slate-100">
-                      Midwest Disc Clinic
-                      <br />
-                      2180N 700W, Shipshewana, IN 46565
-                      <br />
-                      Phone: 260-768-4712 
-                    </div>
-                  </Section>
-                </div>
-                <div className="flex flex-col ml-5 w-[39%] max-md:ml-0 max-md:w-full">
-                  <Section title="Quick Links">
-                    {quickLinks.map((link, index) => (
-                      <QuickLink key={index} text={link} />
-                    ))}
-                  </Section>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col ml-5 w-[56%] max-md:ml-0 max-md:w-full">
-            <div className="max-md:mt-10 max-md:max-w-full">
-              <div className="flex gap-5 max-md:flex-col">
-                <div className="flex flex-col w-[37%] max-md:ml-0 max-md:w-full">
-                  <Section title="Social Proof">
-                    {socialProofLinks.map((link, index) => (
-                      <QuickLink key={index} text={link} />
-                    ))}
-                  </Section>
-                </div>
-                <div className="flex flex-col ml-5 w-[63%] max-md:ml-0 max-md:w-full">
-                  <div className="flex flex-col w-full max-md:mt-10">
-                    <Section title="Newsletter">
-                      <div className="text-lg leading-8 text-slate-100 max-md:mr-1.5">
-                        Stay up to date with our latest news and treatments.
-                      </div>
-                      <NewsletterForm onSubmit={handleNewsletterSubmit} />
-                    </Section>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <div className="flex bg-[#112C53] py-[60px] md:py-[100px] md:pl-[150px]  pl-[20px] pr-[20px] md:pr-[20px] flex-col rounded-none">
     
+    <div className='flex flex-col md:flex-row justify-between'>
+    <div className="flex flex-col w-[61%] max-md:ml-0 max-md:w-full">
+  <Section title="Contact">
+    <div className="text-lg leading-8 text-slate-100">
+      Midwest Disc Clinic
+      <br />
+      2180N 700W, Shipshewana, IN 46565
+      <br />
+      Phone: 260-768-4712 
+    </div>
+  </Section>
+</div>
+<div className="flex flex-col ml-5 w-[39%] max-md:ml-0 max-md:w-full">
+  <Section title="Quick Links">
+    {quickLinks.map((link, index) => (
+      <QuickLink key={index} text={link} />
+    ))}
+  </Section>
+</div>
+
+<div className="flex flex-col w-[37%] max-md:ml-0 max-md:w-full">
+<Section title="Social Proof">
+  {socialProofLinks.map((link, index) => (
+    <QuickLink key={index} text={link} />
+  ))}
+</Section>
+</div>
+<div className="flex flex-col ml-5 w-[63%] max-md:ml-0 max-md:w-full">
+<div className="flex flex-col w-full max-md:mt-10">
+  <Section title="Newsletter">
+    <div className="text-lg leading-8 text-slate-100 max-md:mr-1.5">
+      Stay up to date with our latest news and treatments.
+    </div>
+    <NewsletterForm onSubmit={handleNewsletterSubmit} />
+  </Section>
+</div>
+</div>
+    </div>
     </div>
     <div className="self-center font-source-sans w-full py-3 bg-[#1B365D] text-xs leading-none text-center text-slate-100 ">
         © 2024 Dr. Jeff Garofalo. All rights reserved.

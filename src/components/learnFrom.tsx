@@ -45,14 +45,14 @@ const topContent = [
 
 const LearnFrom = () => {
   return (
-    <div className="flex mt-[150px] flex-col items-center rounded-none">
-      <h1 className={`${font_platinPro} text-4xl font-bold leading-none text-center text-primary max-md:max-w-full`}>
+    <div className="flex mt-[150px] px-4 flex-col items-center rounded-none">
+      <h1 className={`${font_platinPro} text-[34px] md:text-4xl font-bold leading-none text-center text-primary max-md:max-w-full`}>
         Learn from a leading Spine expert
       </h1>
       <div className="flex mt-[6px] justify-center items-center">
         <HorizontalLine />
       </div>
-      <div className="max-w-[1299px] mt-[40px] mx-auto grid grid-cols-3 gap-[30px]">
+      <div className="max-w-[1299px] mt-[40px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-[30px]">
         {topContent.map((item, i) => (
           <ContentCard key={i} {...item} />
         ))}

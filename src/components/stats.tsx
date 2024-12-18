@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import VerticalDivider from "@/assets/images/devider.png";
+import horizontalDivider from "@/assets/images/horizontalDiverd.png";
 import { font_platinPro } from "@/fonts/fonts";
 const Stats = () => {
   const statisticsData = [
@@ -10,20 +11,30 @@ const Stats = () => {
     { value: "#1", label: "Featured Spine Expert" },
   ];
   const dividerImages = [VerticalDivider, VerticalDivider, VerticalDivider];
+  const hdividerImages = [horizontalDivider, horizontalDivider, horizontalDivider];
 
   return (
-    <div className="max-w-[1300px] stats_shadows px-[80px] flex justify-center items-center mx-auto -translate-y-[100px] h-[200px] bg-[#FFFFFF] rounded-[20px] ">
-      <div className="flex w-full justify-between flex-wrap gap-10 items-center font-bold text-center rounded-none">
+   <div className="px-[20px]">
+     <div className="max-w-[1300px] py-[40px] stats_shadows px-[80px] flex justify-center items-center mx-auto  -translate-y-[0px] md:-translate-y-[100px] md:h-[200px] bg-[#FFFFFF] rounded-[20px] ">
+      <div className="flex  md:flex-row flex-col w-full justify-between flex-wrap gap-10 items-center font-bold text-center rounded-none">
         {statisticsData.map((stat, index) => (
           <React.Fragment key={index}>
             <StatisticItem value={stat.value} label={stat.label} />
+            <div className="md:block hidden">
             {index < dividerImages.length && (
-              <Divider imageUrl={dividerImages[index].src} />
+              <Divider  imageUrl={dividerImages[index].src} />
             )}
+            </div>
+            <div className="md:hidden w-full mx-auto justify-center flex  block">
+            {index < hdividerImages.length && (
+              <HDivider  imageUrl={hdividerImages[index].src} />
+            )}
+            </div>
           </React.Fragment>
         ))}
       </div>
     </div>
+   </div>
   );
 };
 
@@ -35,7 +46,7 @@ const StatisticItem = ({ value, label }: { value: string; label: string }) => {
       <h2 className="self-center font-source-sans text-5xl leading-none text-accent max-md:text-4xl">
         {value}
       </h2>
-      <p className={`mt-7 text-lg  ${font_platinPro} leading-none text-primary`}>{label}</p>
+      <p className={`mt-[10px] md:mt-7 text-lg  ${font_platinPro} leading-none text-primary`}>{label}</p>
     </div>
   );
 };
@@ -49,6 +60,19 @@ const Divider = ({ imageUrl }: { imageUrl: string }) => {
       height={132}
       alt=""
       className="object-contain shrink-0 self-stretch aspect-[0.22] w-[29px]"
+    />
+  );
+};
+
+const HDivider = ({ imageUrl }: { imageUrl: string }) => {
+  return (
+    <Image
+      loading="lazy"
+      src={imageUrl}
+      width={132}
+      height={29}
+      alt=""
+      className="object-contain shrink-0 self-stretch"
     />
   );
 };

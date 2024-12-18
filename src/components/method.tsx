@@ -78,17 +78,17 @@ const Method = () => {
   ];
   return (
     <div className="py-[150px]">
-      <div className="max-w-[1277px] mx-auto">
+      <div className="max-w-[1277px] px-4 mx-auto">
         <div className="flex flex-col items-center rounded-none">
-          <h2 className={`${font_platinPro} z-10 text-4xl font-bold leading-10 text-center text-primary max-md:max-w-full`}>
+          <h2 className={`${font_platinPro} z-10 text-[34px] md:text-4xl font-bold leading-[40px] md:leading-10 text-center text-primary max-md:max-w-full`}>
             The DOSAE™ Method:
-            <br />A revolutionary approach to Spine care
+            <br className="md:block hidden" />A revolutionary approach to Spine care
           </h2>
-          <p className={`mt-3  font-source-sans text-lg leading-loose text-[#1B365D]`}>
+          <p className={`mt-3  md:text-start text-center font-source-sans text-lg leading-[22px] text-[#1B365D]`}>
             Where others mask symptoms, we target the root cause.
           </p>
-          <div className="self-stretch mt-12 w-full max-md:mt-10 max-md:max-w-full">
-            <div className="flex gap-5 max-md:flex-col">
+          <div className="self-stretch mt-[40px] md:mt-12 w-full max-md:mt-10 max-md:max-w-full">
+            <div className="flex  gap-5 md:flex-row flex-col-reverse">
               <div className="flex space-y-4 flex-col w-[35%] max-md:ml-0 max-md:w-full">
                 {methodData.map((method, index) => (
                   <MethodSection
@@ -108,14 +108,14 @@ const Method = () => {
                     alt={images[0].alt}
                     className="object-contain w-full rounded-none aspect-[1.99] max-md:max-w-full"
                   />
-                  <div className="mt-8 max-md:max-w-full">
-                    <div className="flex gap-5 max-md:flex-col">
-                      <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                  <div className="mt-[16px] md:mt-8 max-md:max-w-full">
+                    <div className="flex gap-5 ">
+                      <div className="flex flex-row md:flex-col w-6/12 max-md:ml-0 max-md:w-full">
                         <Image
                           loading="lazy"
                           src={images[1].src}
                           alt={images[1].alt}
-                          className="object-contain grow w-full rounded-none aspect-[0.97] max-md:mt-7"
+                          className="object-contain grow w-full rounded-none aspect-[0.97] "
                         />
                       </div>
                       <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
@@ -123,7 +123,7 @@ const Method = () => {
                           loading="lazy"
                           src={images[2].src}
                           alt={images[2].alt}
-                          className="object-contain grow w-full rounded-none aspect-[0.97] max-md:mt-7"
+                          className="object-contain grow w-full rounded-none aspect-[0.97]"
                         />
                       </div>
                     </div>
@@ -159,7 +159,7 @@ const MethodSection = ({
         {letter}
       </div>
       <div className="flex flex-col ">
-        <h3 className={` ${font_platinPro} text-2xl font-bold leading-loose text-primary`}>
+        <h3 className={` ${font_platinPro} text-[22px] md:text-2xl font-bold leading-loose text-primary`}>
           {title}
         </h3>
         <div className="flex flex-col gap-1 mt-2">

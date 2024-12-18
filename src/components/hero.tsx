@@ -5,8 +5,10 @@ import BackgroundGraphic from "@/assets/images/background-graphic-desktip.png";
 import MobileBackgroundGraphic from "@/assets/images/background-graphic-desktip.png";
 import { useState } from "react";
 import { plantinMTPro } from "@/fonts/fonts";
+import UnderLine from "@/assets/icons/mobileUnderlineHero.svg";
+
 const Hero = () => {
-  const [isMobile, setisMobile] = useState(false);
+  // const [isMobile, setisMobile] = useState(false);
 
   const data = [
     {
@@ -30,40 +32,46 @@ const Hero = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(${
-          isMobile ? MobileBackgroundGraphic.src : BackgroundGraphic.src
-        })`,
+        backgroundImage: `url(${BackgroundGraphic.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-      className="flex relative  gap-x-[40px] justify-center pt-[84px] pb-[259px] px-20"
+      className="flex md:flex-row flex-col relative  gap-[40px] justify-center pt-[40px] md:pt-[84px] pb-[259px] px-[20px] md:px-20"
     >
       <div>
-        <h1 className={`text-[70px] ${plantinMTPro.variable} font-serif  leading-[80px] font-bold text-primary`}>
+        <h1
+          className={`text-[50px] leading-[60px] md:text-[70px] ${plantinMTPro.variable} font-serif  md:leading-[80px] font-bold text-primary`}
+        >
           Advanced Non-
-          <br />{" "}
+          <br className="hidden md:block" />{" "}
           <span className="relative ">
             <span className="z-20 relative"> Surgical Spine</span>
-            <span className="absolute z-10 pb-5 -bottom-8 left-0">
+            <span className="absolute md:block hidden z-10 pb-5 -bottom-8 left-0">
               {" "}
               <Line />
             </span>
+            <span className="absolute md:hidden block z-10 pb-5 -bottom-8 left-0">
+              {" "}
+              <UnderLine />
+            </span>
           </span>{" "}
-          <br /> care that works
+          <br className="hidden md:block" /> care that works
         </h1>
         <p className="text-primary  font-source-sans text-xl">
           Pioneering breakthrough treatments for disc injuries, helping <br />
           thousands avoid surgery and return to a pain-free life.
         </p>
 
-        <div className="grid pt-[46px] grid-cols-2 gap-x-[41px] gap-y-[30px]">
+        <div className="grid pt-[46px] grid-cols-1 md:grid-cols-2 gap-x-[41px] gap-y-[30px]">
           {data.map((item, i) => (
             <div className="bg-white hero_shadow rounded-lg p-[20px]" key={i}>
               <h3 className="text-[18px] font-source-sans font-bold text-secondary">
                 {item.title}
               </h3>
-              <p className="text-[18px] font-source-sans  text-[#1B365D]">{item.desc}</p>
+              <p className="text-[18px] font-source-sans  text-[#1B365D]">
+                {item.desc}
+              </p>
             </div>
           ))}
         </div>

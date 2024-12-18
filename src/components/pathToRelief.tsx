@@ -14,17 +14,17 @@ const PathToRelief = () => {
   ];
   return (
     <div>
-      <div className="flex justify-center gap-20 items-center max-w-[1300px] mx-auto bg-primary rounded-[40px] pl-[110px] pr-[134px]">
-        <div>
-          <h2 className={`${font_platinPro} text-[40px] text-white font-bold`}>
+      <div className="flex md:flex-row flex-col-reverse justify-center gap-10 md:gap-20 items-center max-w-[1300px] mx-auto bg-primary rounded-[0px] md:rounded-[40px] pl-0 px-0 md:pl-[110px] md:pr-[134px]">
+        <div className="md:px-0 px-10 pb-10">
+          <h2 className={`${font_platinPro} text-[34px] md:text-[40px] text-white font-bold`}>
             Discover your path to relief
           </h2>
-          <p className=" font-source-sans text-[18px] leading-[28px] text-[#F5F7F9]">
+          <p className=" font-source-sans text-[18px] mt-[20px] leading-[28px] text-[#F5F7F9]">
             Take our comprehensive spine assessment to find out if the DOSAE™{" "}
             <br /> method could help you avoid surgery
           </p>
           <div>
-            <h4 className={`${font_platinPro} pt-[41px] font-bold text-[24px] text-[#7C9885]`}>
+            <h4 className={`${font_platinPro} pt-[41px] font-bold text-[20px]  md:text-[24px] text-[#7C9885]`}>
               Whether you're experiencing:
             </h4>
             <ul className="pt-[10px] space-y-[10px]">

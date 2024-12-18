@@ -21,9 +21,9 @@ const Results = () => {
     },
   ];
   return (
-    <div>
-      <div className="flex max-w-[1300px] mx-auto py-[50px] px-[111px]  rounded-[40px] bg-[#F5F7F9] flex-col items-center">
-        <h2 className={`z-10 ${font_platinPro}  text-4xl font-bold leading-none text-center text-blue-950 max-md:max-w-full`}>
+    <div className="mt-[120px]"> 
+      <div className="flex max-w-[1300px] mx-auto py-[50px] px-4 md:px-[111px]  rounded-[40px] bg-[#F5F7F9] flex-col items-center">
+        <h2 className={`z-10 ${font_platinPro}  text-[34px] md:text-4xl font-bold leading-none text-center text-blue-950 max-md:max-w-full`}>
           Real results, Real people
         </h2>
 
@@ -31,7 +31,7 @@ const Results = () => {
           <HorizontalLine />
         </div>
         <div className="self-stretch mt-10 w-full max-md:max-w-full">
-          <div className="flex gap-[30px] max-md:flex-col">
+          <div className="flex gap-[30px] md:flex-row flex-col">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
@@ -42,14 +42,14 @@ const Results = () => {
             ))}
           </div>
         </div>
-        <div className="flex mt-[60px] gap-x-[127px] justify-center items-center">
-          <div>
+        <div className="flex md:flex-row flex-col mt-[60px] gap-y-[40px]  gap-x-[127px] justify-center items-center">
+          <div className="md:block hidden">
             <RoundedArrow/>
           </div>
           <StatisticItem value="90%" label="Success Rate" />
           <StatisticItem value="8/10" label="Patients avoid surgery" />
           <StatisticItem value="85%" label="Average pain reduction" />
-          <div>
+          <div className="md:block hidden">
             <RoundedArrowRight/>
           </div>
         </div>
@@ -71,7 +71,7 @@ const StatisticItem = ({
 }) => {
   return (
     <div className="flex flex-col font-bold text-center">
-      <h3 className="self-center  font-source-sans text-5xl leading-none text-[#7C9885] max-md:text-4xl">
+      <h3 className="self-center  font-source-sans md:text-5xl leading-none text-[#7C9885] text-[50px]">
         {value}
       </h3>
       <p className={`${font_platinPro} mt-[10px] w-full text-lg  whitespace-nowrap leading-none text-primary`}>{label}</p>

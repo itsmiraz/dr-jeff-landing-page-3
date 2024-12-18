@@ -20,14 +20,14 @@ const WorldClassTreatments = () => {
 
   return (
     <div className="mt-[150px]">
-      <div className="flex  justify-center max-w-[1300px] mx-auto  flex-col rounded-none">
-        <h2 className={`${font_platinPro} self-center ml-5 text-4xl font-bold leading-none text-center text-primary max-md:max-w-full`}>
+      <div className="flex  px-[20px] justify-center max-w-[1300px] mx-auto  flex-col rounded-none">
+        <h2 className={`${font_platinPro}  self-center ml-5 text-[34px] md:text-4xl font-bold leading-none text-center text-primary max-md:max-w-full`}>
           World-Class treatment available now
         </h2>
         <div className="pt-[6px] mx-auto">
           <HorizontalLine />
         </div>
-        <div className="flex gap-[30px] pt-[40px]" >
+        <div className="flex md:flex-row flex-col gap-[30px] pt-[40px]" >
           <PatientSection
             title="Local Patients"
             description="Visit our state-of-the-art clinic in Shipshewana, Indiana:"
@@ -53,7 +53,7 @@ export default WorldClassTreatments;
 
 const ActionButton = ({ text }: { text: string }) => (
   <button className="gap-x-[10px] font-source-sans flex items-center w-fit px-5 py-[13px] bg-secondary rounded-[100px]">
-    <span className="grow text-sm font-bold leading-loose text-white">
+    <span className="grow text-xs md:text-sm font-bold leading-loose text-white">
       {text}
     </span>
     <span>
@@ -73,12 +73,14 @@ const PatientSection = ({
   description: string;
   bulletPoints: string[];
 }) => (
-  <div className="h-[471px] p-[30px] rounded-[30px] bg-[#F5F7F9] max-w-[635px] ">
-   <div className="bg-white h-full pt-[50px] pb-[20px] px-[40px] rounded-[30px] flex flex-col flex-1 max-md:max-w-full">
-   <h2 className={`${font_platinPro} self-start text-4xl font-bold leading-none text-[#7C9885]`}>
+  <div className="h-fit md:h-[471px] p-0 md:p-[30px] rounded-[30px]  bg-transparent md:bg-[#F5F7F9] max-w-[635px] ">
+   <div 
+   
+   className="bg-white drop-shadow-xl h-full pt-[50px] pb-[20px] px-[20px] rounded-[30px] flex flex-col flex-1 max-md:max-w-full">
+   <h2 className={`${font_platinPro} whitespace-nowrap self-start text-[34px] md:text-4xl font-bold leading-none text-[#7C9885]`}>
       {title}
     </h2>
-    <p className=" font-source-sans mt-4 text-xl leading-[28px] text-[#s1B365D] max-md:max-w-full">
+    <p className=" font-source-sans mt-4 text-[18px] md:text-xl leading-[28px] text-[#1B365D] max-md:max-w-full">
       {description}
     </p>
     <div className="mt-[15px]">
