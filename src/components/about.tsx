@@ -7,7 +7,7 @@ import { font_platinPro } from "@/fonts/fonts";
 const About = () => {
   return (
     <div className="mt-[60px] md:mt-[150px]">
-      <div className="max-w-[1077px] px-[20px] gap-y-[40px] md:flex-row flex-col-reverse flex justify-between items-center p-[40px] rounded-[0px] md:rounded-[40px] mx-auto bg-[#F5F7F9]">
+      <div className="max-w-[1077px] px-[20px] gap-y-[40px] md:flex-row flex-col-reverse flex justify-between items-center md:px-[40px] p-[40px] rounded-[0px] md:rounded-[40px] mx-auto bg-[#F5F7F9]">
         <div>
           <h2 className={`${font_platinPro} text-[34px] md:text-[40px] font-bold text-primary`}>Meet Dr. Jeff Garofalo</h2>
           <p className="font-source-sans text-[16px] text-primary  mt-[20px] leading-[24px] ">

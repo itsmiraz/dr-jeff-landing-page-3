@@ -15,7 +15,7 @@ const PathToRelief = () => {
   return (
     <div>
       <div className="flex md:flex-row flex-col-reverse justify-center gap-10 md:gap-20 items-center max-w-[1300px] mx-auto bg-primary rounded-[0px] md:rounded-[40px] pl-0 px-0 md:pl-[110px] md:pr-[134px]">
-        <div className="md:px-0 px-10 pb-10">
+        <div className="md:px-0 px-10 md:pb-0 pb-10">
           <h2 className={`${font_platinPro} text-[34px] md:text-[40px] text-white font-bold`}>
             Discover your path to relief
           </h2>
@@ -40,7 +40,7 @@ const PathToRelief = () => {
             <button className="rounded-full font-source-sans font-bold text-white flex items-center justify-center gap-x-[12px] px-[20px] py-[13px] bg-[#D4AA4F]">
               Start Your Free Assessment <LeftArrow />
             </button>
-            <p className="font-semibold font-source-sans mt-[6px] text-[14px] text-[#7C9885]">
+            <p className="font-semibold  font-source-sans mt-[16px] text-[14px] text-[#7C9885]">
               Our assessment will help determine your best treatment path.
             </p>
           </div>
