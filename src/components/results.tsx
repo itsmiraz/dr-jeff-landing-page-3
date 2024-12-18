@@ -43,13 +43,13 @@ const Results = () => {
           </div>
         </div>
         <div className="flex md:flex-row flex-col mt-[60px] gap-y-[40px]  gap-x-[127px] justify-center items-center">
-          <div className="md:block hidden">
+          <div className="md:block  translate-x-10 hidden">
             <RoundedArrow/>
           </div>
           <StatisticItem value="90%" label="Success Rate" />
           <StatisticItem value="8/10" label="Patients avoid surgery" />
           <StatisticItem value="85%" label="Average pain reduction" />
-          <div className="md:block hidden">
+          <div className="md:block -translate-x-10  hidden">
             <RoundedArrowRight/>
           </div>
         </div>

@@ -52,7 +52,7 @@ const LearnFrom = () => {
       <div className="flex mt-[6px] justify-center items-center">
         <HorizontalLine />
       </div>
-      <div className="max-w-[1299px] mt-[40px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+      <div className="max-w-[1320px] mt-[40px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-[30px]">
         {topContent.map((item, i) => (
           <ContentCard key={i} {...item} />
         ))}

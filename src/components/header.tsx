@@ -26,7 +26,7 @@ const Header = () => {
         <div className="flex max-w-[1300px]  py-4  mx-auto px-2 md:px-10   justify-between items-center">
           <Image src={Logo} className="max-w-[90px]" alt="logo" />
           <div className="">
-            <ul className={` z-30 transform duration-200 ease-in-out ${IsOpen ? 'top-28 header_shadow':" top-[-400px] "} md:block left-0 md:justify-center justify-start  absolute flex md:flex-row flex-col items-start bg-white w-full p-5 md:items-center gap-x-6`}>
+            <ul className={`z-30 transform duration-200 ease-in-out ${IsOpen ? 'top-28 header_shadow':" top-[-400px] "} md:top-0  md:flex left-0 md:justify-center justify-start  absolute md:relative flex md:flex-row flex-col items-start bg-white w-full p-5 md:items-center gap-x-6`}>
               <li>
                 <p className="hover:font-bold cursor-pointer font-normal hover:underline text-[16px]">
                   Home
@@ -58,7 +58,7 @@ const Header = () => {
             Contact
           </button>
 
-          <div>
+          <div className="md:hidden block">
             <button onClick={() => setIsOpen(!IsOpen)}>
               {IsOpen ? <Cross /> : <Menu />}
             </button>

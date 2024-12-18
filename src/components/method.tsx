@@ -88,8 +88,8 @@ const Method = () => {
             Where others mask symptoms, we target the root cause.
           </p>
           <div className="self-stretch mt-[40px] md:mt-12 w-full max-md:mt-10 max-md:max-w-full">
-            <div className="flex  gap-5 md:flex-row flex-col-reverse">
-              <div className="flex space-y-4 flex-col w-[35%] max-md:ml-0 max-md:w-full">
+            <div className="flex items-center gap-x-[60px]  justify-center gap-5 md:flex-row flex-col-reverse">
+              <div className="flex space-y-4 flex-col max-md:ml-0 max-md:w-full">
                 {methodData.map((method, index) => (
                   <MethodSection
                     key={index}
@@ -100,7 +100,7 @@ const Method = () => {
                   />
                 ))}
               </div>
-              <div className="flex flex-col ml-5 w-[65%] max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col ml-5 w-[55%] max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col mt-2 w-full max-md:mt-10 max-md:max-w-full">
                   <Image
                     loading="lazy"
