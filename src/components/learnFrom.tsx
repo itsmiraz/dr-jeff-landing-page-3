@@ -45,7 +45,7 @@ const topContent = [
 
 const LearnFrom = () => {
   return (
-    <div className="flex mt-[150px] px-4 flex-col items-center rounded-none">
+    <div className="flex mt-[60px] md:mt-[150px] px-6 flex-col items-center rounded-none">
       <h1 className={`${font_platinPro} text-[34px] md:text-4xl font-bold leading-none text-center text-primary max-md:max-w-full`}>
         Learn from a leading Spine expert
       </h1>
@@ -82,15 +82,15 @@ const ContentCard = ({
   imageSrc: string;
 }) => {
   return (
-    <div className="flex pt-[20px] pb-[25px] px-[20px]  rounded-[40px] bg-[#F5F7F9] flex-col w-full">
-      <div className="flex flex-col grow items-start font-bold max-md:mt-10">
+    <div className="flex pt-[20px] pb-[25px] px-[20px]  rounded-[30px] md:rounded-[40px] bg-[#F5F7F9] flex-col w-full">
+      <div className="flex flex-col grow items-start font-bold ">
         <Image
           loading="lazy"
           src={imageSrc}
           alt={title}
           width={373}
           height={220}
-          className="object-contain self-stretch w-full rounded-none aspect-[1.69]"
+          className=" self-stretch rounded-none w-full"
         />
         <p className="mt-3.5  font-source-sans text-base text-secondary">{type}</p>
         <h3 className={`mt-[4px] ${font_platinPro} text-xl leading-relaxed text-primary`}>

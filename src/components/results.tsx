@@ -22,7 +22,7 @@ const Results = () => {
   ];
   return (
     <div className="mt-[120px]"> 
-      <div className="flex max-w-[1300px] mx-auto py-[50px] px-4 md:px-[111px]  rounded-[40px] bg-[#F5F7F9] flex-col items-center">
+      <div className="flex max-w-[1300px] mx-auto py-[50px] px-4 md:px-[111px]   rounded-[0px] md:rounded-[40px] bg-[#F5F7F9] flex-col items-center">
         <h2 className={`z-10 ${font_platinPro}  text-[34px] md:text-4xl font-bold leading-none text-center text-blue-950 max-md:max-w-full`}>
           Real results, Real people
         </h2>

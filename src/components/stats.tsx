@@ -15,8 +15,8 @@ const Stats = () => {
 
   return (
    <div className="px-[20px]">
-     <div className="max-w-[1300px] py-[40px] stats_shadows px-[80px] flex justify-center items-center mx-auto  -translate-y-[0px] md:-translate-y-[100px] md:h-[200px] bg-[#FFFFFF] rounded-[20px] ">
-      <div className="flex  md:flex-row flex-col w-full justify-between flex-wrap gap-10 items-center font-bold text-center rounded-none">
+     <div className="max-w-[1300px] py-[40px] stats_shadows px-[43px] md:px-[80px] flex justify-center items-center mx-auto  -translate-y-[0px] md:-translate-y-[100px] md:h-[200px] bg-[#FFFFFF] rounded-[20px] ">
+      <div className="flex  md:flex-row flex-col w-full justify-between flex-wrap gap-[16px]  md:gap-10 items-center font-bold text-center rounded-none">
         {statisticsData.map((stat, index) => (
           <React.Fragment key={index}>
             <StatisticItem value={stat.value} label={stat.label} />
@@ -25,7 +25,7 @@ const Stats = () => {
               <Divider  imageUrl={dividerImages[index].src} />
             )}
             </div>
-            <div className="md:hidden w-full mx-auto justify-center flex  block">
+            <div className="md:hidden w-full mx-auto justify-center flex  ">
             {index < hdividerImages.length && (
               <HDivider  imageUrl={hdividerImages[index].src} />
             )}
@@ -43,7 +43,7 @@ export default Stats;
 const StatisticItem = ({ value, label }: { value: string; label: string }) => {
   return (
     <div className="flex flex-col self-stretch my-auto">
-      <h2 className="self-center font-source-sans text-5xl leading-none text-accent max-md:text-4xl">
+      <h2 className="self-center font-source-sans  text-[50px] md:text-5xl leading-none text-accent max-md:text-4xl">
         {value}
       </h2>
       <p className={`mt-[10px] md:mt-7 text-lg  ${font_platinPro} leading-none text-primary`}>{label}</p>
